@@ -1,13 +1,15 @@
 ---
 Maquina: Trust
 SO: Linux
-Explotación: Análisis de imágenes
+Explotación: Fuerza bruta
 Escala_privs: Permisos sudo
 Dificultad: Muy fácil
 tags:
   - maquina
   - fuerza_bruta
   - linux
+  - ssh
+  - web_discovery
 ---
 ## Reconocimiento
 

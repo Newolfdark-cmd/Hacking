@@ -1,7 +1,7 @@
 ---
 Maquina: obssesion
 SO: Linux
-Explotación: Análisis de imágenes
+Explotación: Fuerza bruta
 Escala_privs: Permisos sudo
 Dificultad: Muy fácil
 tags:
@@ -9,6 +9,8 @@ tags:
   - fuerza_bruta
   - escala_privs
   - linux
+  - ssh
+  - web_discovery
 ---
 ## Reconocimiento
 
