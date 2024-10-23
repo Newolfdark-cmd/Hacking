@@ -35,6 +35,10 @@ Como se puede apreciar es la página por defecto de apache. Vamos a intentar ver
 
 Al parecer hay una imagen almacenada dentro de la web, vamos a analizarla a ver si contiene algo de información. La imagen es la siguiente:
 
+```bash 
+gobuster dir -u http://172.17.0.2 -w /home/alejandro/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-big.txt -x .php,.py,.js,.txt
+```
+
 ![[Pasted image 20241023091714.png]]
 
 3. **Análisis de la imagen**:
