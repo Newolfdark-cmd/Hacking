@@ -26,6 +26,8 @@ Apreciamos que hay una página web y un servicio de SSH, vamos primero a explora
 
 Ya de primeras en uno de los mensajes apreciamos el nombre de "juan" destacado como que fue despedido (ya tenemos un posible nombre de usuario) y lo firma una tal "carlota" (otro posible vector para fuerza bruta).
 
+![[Pasted image 20241023200530.png]]
+
 Por si acaso le vamos a pasar un gobuster, a ver si detecta algo
 
 ```bash 
