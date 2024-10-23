@@ -1,5 +1,5 @@
 ---
-Herramienta: Steghide
+Herramienta: 🕵🏻 Steghide
 Comando: steghide
 Categoría: Análisis de imágenes
 fecha: 2024-10-17

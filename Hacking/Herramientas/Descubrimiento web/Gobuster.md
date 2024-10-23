@@ -1,5 +1,5 @@
 ---
-Herramienta: gobuster
+Herramienta: 👻 gobuster
 Comando: gobuster
 Categoría: Descubrimiento web
 fecha: 2024-10-21

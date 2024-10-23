@@ -1,5 +1,5 @@
 ---
-Herramienta: Hydra
+Herramienta: 🐍 Hydra
 Comando: hydra
 Categoría: Fuerza Bruta
 fecha: 2024-10-17

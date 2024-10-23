@@ -1,5 +1,5 @@
 ---
-Herramienta: Exiftool
+Herramienta: 📸 Exiftool
 Comando: exiftool
 Categoría: Análisis de imágenes
 fecha: 2024-10-17

@@ -1,5 +1,5 @@
 ---
-Herramienta: Strings
+Herramienta: 🧶 Strings
 Comando: steghide
 Categoría: Análisis de imágenes
 fecha: 2024-10-23
