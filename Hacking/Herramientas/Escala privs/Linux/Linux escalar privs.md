@@ -1,6 +1,6 @@
 ---
 Post-exploit: 🪜 escalar privs
-fecha: 2024-10-21
+fecha: 2024-10-23
 tags:
   - Procedimientos
 ---
@@ -66,4 +66,20 @@ Comando para ver la versión del kernel:
 
 ```bash
 uname -a
+```
+
+8. **Abusar de servicios locales mal configurados:**
+
+Servicios locales como MySQL o Apache pueden correr con privilegios elevados. Si encuentras credenciales o configuraciones débiles, podrías explotarlas para obtener acceso root.
+
+```bash
+ps aux | grep root
+```
+
+9. **Buscar archivos o directorios con permisos incorrectos:**
+
+Si encuentras archivos importantes, como `/etc/passwd` o `/etc/shadow`, con permisos de escritura para usuarios normales, puedes modificarlos para crear un usuario con privilegios root.
+
+```bash
+ls -la /etc/passwd /etc/shadow
 ```
