@@ -118,7 +118,7 @@ En mis tiempos diríamos "Carlota está por Oscar!!" a modo de burla. Gracias Ca
 
 7. **Escalar privs**: 
 
-Vamos a ver si tu amigito Oscar tiene más privs.
+Vamos a ver si tu amiguito Oscar tiene más privs.
 
 ![[Pasted image 20241023200003.png]]
 
