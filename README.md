@@ -20,16 +20,14 @@
 - **Security Tools**: ![Burp suite](https://img.shields.io/badge/BurpSuite-D14836?style=for-the-badge&logo=burpsuite&logoColor=white) ![Metasploit](https://img.shields.io/badge/Metasploit-217346?style=for-the-badge&logo=Metasploit&logoColor=white) ![wireshark](https://img.shields.io/badge/wireshark-666666?style=for-the-badge&logo=wireshark&logoColor=white) ![Nmap](https://img.shields.io/badge/Nmap-2D8CFF?style=for-the-badge&logo=Nmap&logoColor=white)
 
 
+## Certifications 📜 :
+- eJPTv2 (Junior Penetration Tester)
+- [Future Certification] (ECCPT)
+
 ## Connect with me ☕ :
 
 <br>
 
  [![@alejandropalaciosaguado](https://img.icons8.com/fluency/48/000000/linkedin.png "@alejandropalaciosaguado")](https://www.linkedin.com/in/alejandro-palacios-aguado-49951b225/) [![@alejabdropalacios.trabajo@gmail.com](https://img.icons8.com/fluency/48/000000/apple-mail.png "@alejandropalacios.trabajo@gmail.com")](alejandropalacios.trabajo@gmail.com)
-
-<br>
-
-## Certifications 📜 :
-- eJPTv2 (Junior Penetration Tester)
-- [Future Certification] (ECCPT)
 
 
