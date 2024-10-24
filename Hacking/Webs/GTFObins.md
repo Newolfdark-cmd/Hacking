@@ -1,5 +1,5 @@
 ---
-Página: obssesionGTFObins
+Página: GTFObins
 URL: https://gtfobins.github.io/
 Utilidad: Escalada privs
 tags:
