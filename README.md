@@ -22,7 +22,7 @@
 
 ## Certifications 📜 :
 - eJPTv2 (Junior Penetration Tester)
-- [Future Certification] (ECCPT)
+- [Future Certification] (ECPPT)
 
 ## Connect with me ☕ :
 
