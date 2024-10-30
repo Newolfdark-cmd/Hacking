@@ -1,5 +1,5 @@
 ---
-Maquina: Cchocolatelovers
+Maquina: Cchocolateloversp
 SO: Linux
 Explotación: Análisis de web
 Escala_privs: Permisos sudo
