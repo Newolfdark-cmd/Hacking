@@ -45,7 +45,7 @@ SHELL=/bin/bash script -q /dev/null
  stty -a
 ```
 
-Importante tomar nota del número de filas y columuas ejemplo -> (_“rows 37; columns 146”_)
+Importante tomar nota del número de filas y columuas ejemplo -> (_“rows 43; columns 184”_)
 
 3. Poner el valor del stty actual en raw para pasarselo al echo
 
@@ -64,7 +64,7 @@ stty raw -echo
 
 $ export SHELL=bash
 $ export TERM=xterm256-color
-$ stty rows 37 columns 146
+$ stty rows 43 columns 184
 $ bash -i
 
 7. En caso de fallo poner las siguientes.
