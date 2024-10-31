@@ -1,8 +1,8 @@
 ---
-Maquina: Cchocolateloversp
+Maquina: Cchocolatelovers
 SO: Linux
 Explotación: Análisis de web
-Escala_privs: Permisos sudo
+Escala_privs: Permisos sudo / Procesos root
 Dificultad: Fácil
 tags:
   - maquina
@@ -11,6 +11,7 @@ tags:
   - escala_privs
   - web
   - nibbleblog
+  - procesos
 ---
 ## Reconocimiento
 
