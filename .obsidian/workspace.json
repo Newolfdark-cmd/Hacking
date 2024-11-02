@@ -8,35 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ad3ad3bc5ad4fe86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hacking/Extras/Upgrade de shell.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Upgrade de shell"
-            }
-          },
-          {
             "id": "a279d30a4d3dfdfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacking/Maquinas/Docker-labs/Fácil/Escolares.md",
+                "file": "Hacking/Maquinas/Docker-labs/Fácil/Library.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Library"
+            }
+          },
+          {
+            "id": "8062e959a451224b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacking/Herramientas/Escala privs/Linux/Linux escalar privs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Escolares"
+              "title": "Linux escalar privs"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,33 +190,34 @@
   },
   "active": "a279d30a4d3dfdfb",
   "lastOpenFiles": [
-    "Pasted image 20241031161339.png",
-    "Pasted image 20241031161128.png",
-    "Pasted image 20241031161033.png",
-    "Hacking/Extras/Upgrade de shell.md",
-    "Hacking/Maquinas/Docker-labs/Fácil/Escolares.md",
-    "Pasted image 20241031155828.png",
-    "Pasted image 20241031155728.png",
-    "Hacking/Maquinas/Docker-labs/Fácil/Buscalove.md",
-    "Pasted image 20241031155453.png",
-    "Pasted image 20241031155437.png",
-    "Pasted image 20241031153834.png",
-    "Pasted image 20241031131747.png",
-    "Hacking/Maquinas/Docker-labs/Fácil/Chocolatelovers.md",
-    "Pasted image 20241030181321.png",
-    "Pasted image 20241030181029.png",
-    "Hacking/Maquinas/Docker-labs/Fácil/Aduademayo.md",
+    "Hacking/Anexos/Pasted image 20241102191133.png",
+    "Hacking/Anexos/Pasted image 20241102191057.png",
+    "Hacking/Anexos/Pasted image 20241102190942.png",
+    "Hacking/Anexos/Pasted image 20241102190940.png",
     "Hacking/Herramientas/Escala privs/Linux/Linux escalar privs.md",
+    "Hacking/Maquinas/Docker-labs/Fácil/Library.md",
+    "Hacking/Maquinas/Docker-labs/Fácil/Amor.md",
+    "Hacking/Anexos/Pasted image 20241102182242.png",
+    "Hacking/Anexos/Pasted image 20241102181946.png",
+    "Hacking/Anexos/Pasted image 20241102181854.png",
+    "Hacking/Maquinas/Docker-labs/Fácil/Anonymousopingu.md",
+    "Hacking/Maquinas/Docker-labs/Fácil/Aduademayo.md",
+    "Hacking/Anexos/Pasted image 20241102173256.png",
+    "Hacking/Anexos/Pasted image 20241102173228.png",
+    "Hacking/Anexos/Pasted image 20241102173026.png",
+    "Hacking/Anexos/Pasted image 20241102172908.png",
+    "Hacking/Maquinas/Docker-labs/Fácil/Escolares.md",
+    "Hacking/Extras/Upgrade de shell.md",
+    "Hacking/Maquinas/Docker-labs/Fácil/Chocolatelovers.md",
+    "Hacking/Maquinas/Docker-labs/Muy fácil/Obssesion.md",
+    "Hacking/Maquinas/Docker-labs/Muy fácil/Firsthacking.md",
+    "Hacking/Maquinas/Docker-labs/Muy fácil/Vacaciones.md",
+    "Hacking/Maquinas/Docker-labs/Fácil/Buscalove.md",
     "Hacking/Herramientas/Descubrimiento web/Gobuster.md",
     "Hacking/Herramientas.md",
     "Hacking/Maquinas/Docker-labs/Muy fácil/BorazuwarahCTF.md",
     "Hacking/Maquinas.md",
     "Hacking/Herramientas/Análisis de imágenes/Exiftool.md",
-    "Hacking/Maquinas/Docker-labs/Muy fácil/Vacaciones.md",
-    "Hacking/Maquinas/Docker-labs/Muy fácil/Obssesion.md",
-    "Hacking/Maquinas/Docker-labs/Muy fácil/Firsthacking.md",
-    "Hacking/Maquinas/Docker-labs/Fácil/Anonymousopingu.md",
-    "Hacking/Maquinas/Docker-labs/Fácil/Amor.md",
     "README.md"
   ]
 }

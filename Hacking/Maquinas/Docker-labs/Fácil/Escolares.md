@@ -10,8 +10,7 @@ tags:
   - linux
   - escala_privs
   - web
-  - nibbleblog
-  - procesos
+  - wordpress
 ---
 ## Reconocimiento
 
