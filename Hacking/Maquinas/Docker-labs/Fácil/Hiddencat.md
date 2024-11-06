@@ -6,12 +6,11 @@ Escala_privs: Permisos sudo
 Dificultad: Fácil
 tags:
   - maquina
-  - web_discovery
-  - analisis_imagen
   - linux
   - escala_privs
   - ssh
   - web
+  - apache_jserv
 ---
 ## Reconocimiento
 
