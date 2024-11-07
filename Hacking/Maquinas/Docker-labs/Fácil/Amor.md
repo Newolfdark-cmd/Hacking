@@ -1,7 +1,7 @@
 ---
 Maquina: amor
 SO: Linux
-Explotación: Análisis de imágenes y web
+Explotación: Análisis web e imagen
 Escala_privs: Permisos sudo
 Dificultad: Fácil
 tags:

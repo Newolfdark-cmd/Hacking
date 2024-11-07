@@ -1,7 +1,7 @@
 ---
 Maquina: dockerlabs
 SO: Linux
-Explotación: Análisis de imágenes y web
+Explotación: File Upload
 Escala_privs: Permisos sudo
 Dificultad: Fácil
 tags:

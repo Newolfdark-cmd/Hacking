@@ -1,7 +1,7 @@
 ---
 Maquina: library
 SO: Linux
-Explotación: Análisis de imágenes y web
+Explotación: Análisis de AJP
 Escala_privs: Permisos sudo
 Dificultad: Fácil
 tags:

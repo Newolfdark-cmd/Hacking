@@ -1,7 +1,7 @@
 ---
 Maquina: consolelog
 SO: Linux
-Explotación: Análisis de imágenes y web
+Explotación: Análisis web y fuerza bruta
 Escala_privs: Permisos sudo
 Dificultad: Fácil
 tags:
