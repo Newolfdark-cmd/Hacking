@@ -1,5 +1,5 @@
 ---
-Funcion: Mejorar shell
+Funcion: 🚀 Mejorar shell
 SO: Linux
 tags:
   - extra

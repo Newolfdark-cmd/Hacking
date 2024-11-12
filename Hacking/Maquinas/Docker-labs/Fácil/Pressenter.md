@@ -1,8 +1,8 @@
 ---
 Maquina: pressenter
 SO: Linux
-Explotación: Análisis web y fuerza bruta
-Escala_privs: Permisos sudo
+Explotación: Análisis web/wordpress y fuerza bruta
+Escala_privs: Permisos sudo y mysql
 Dificultad: Fácil
 tags:
   - maquina
@@ -12,6 +12,8 @@ tags:
   - ssh
   - web
   - fuerza_bruta
+  - wordpress
+  - mysql
 ---
 ## Reconocimiento
 
