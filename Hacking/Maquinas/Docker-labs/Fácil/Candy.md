@@ -10,7 +10,7 @@ tags:
   - linux
   - escala_privs
   - ssh
-  - LFI
+  - RCE
 ---
 ## Reconocimiento
 
