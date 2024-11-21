@@ -1,17 +1,17 @@
 ---
 Maquina: aduademayo
 SO: Linux
-Explotación: Análisis de imágenes y web
+Explotación: Análisis web y fuerza bruta
 Escala_privs: Permisos sudo
 Dificultad: Fácil
 tags:
   - maquina
   - web_discovery
-  - analisis_imagen
   - linux
   - escala_privs
   - ssh
   - web
+  - mysql
 ---
 ## Reconocimiento
 
