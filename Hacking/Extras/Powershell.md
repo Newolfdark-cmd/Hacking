@@ -1,5 +1,5 @@
 ---
-Extra: 🪜 Powershell
+Extra: 🖥️ Powershell
 fecha: 2024-12-02
 tags:
   - extra
@@ -7,6 +7,7 @@ tags:
 
 ## Powershell:
 
+**PowerShell** es un marco de automatización y gestión de configuración creado por Microsoft. Combina una línea de comandos interactiva con un lenguaje de scripting robusto, diseñado para facilitar la administración de sistemas y la automatización de tareas en entornos Windows y, más recientemente, multiplataforma (Linux y macOS).
 
 Ruta del ejecutable -> This PC/Local Disk (C:)/Windows/WindowsPowerShell/vX/Powershell.exe
 
