@@ -69,3 +69,43 @@ Get-WmiObject -class win32_operatingsystem | select -Property *
 Get-WmiObject -class win32_operatingsystem | select -Property * | Select-Object version
 ```
 
+Los modules son archivos que agrupa funciones de poweshell como pueden ser:
+- scripts
+- binarios
+- manifests
+
+Puedes listar los módulos con get-module. Con esto podríamos incluso importar módulos destinados a hacking como PowerSploit.
+
+`Import-Module PowerSploit`
+
+### Powershell scripts
+
+```powershell
+#Script para leer el contenido de un fichero
+Param{
+	[parameter(mandatory=$true)[string]$file]
+}
+Get-Content "$file"
+```
+
+![[Pasted image 20241202194337.png]]
+
+![[Pasted image 20241202194608.png]]
+
+Ahora vamos a desarrollar un script para hacer un escaner simple de puertos ->
+
+ ```powershell
+$ports=(80,445);
+$ip="192.168.2.1";
+foreach($port in $ports){
+	try(
+		$socket=New-Object System-Net.Sockets-TcpClient($ip,$ports);
+	)catch{};
+	if ($socket -eq $null){
+		echo $ip":"$port" -Closed";
+	}else{
+		echo $ip":"$port" -Open"; 
+		$socket=$null;
+	}
+}
+```
