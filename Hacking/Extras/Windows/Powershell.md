@@ -110,3 +110,26 @@ foreach($port in $ports){
 }
 ```
 
+## Ejemplos de uso
+
+**Ejemplo 1**
+
+Hay un módulo conocido como Invoke_Obfuscation y para incluirlo en powershell podemos dirigirnos a la ubicación del módulo
+
+```powershell
+./Invoke-Obfuscation
+#cargará el modulo en consola y este módulo nos puede servir para ofuscar comandos como reverse shells.
+
+SET SCRIPTPATH /path
+
+#Así le asignamos el fichero que tiene que ofuscar.
+
+AST
+
+ALL
+
+1
+
+#Estos son los parametros que tenemos que indicar para hacer una ofuscación completa del código que hay dentro del archivo. Es una forma muy eficaz de ofuscar scripts de powershell.
+```
+
