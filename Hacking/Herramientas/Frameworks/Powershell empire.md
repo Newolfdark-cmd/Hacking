@@ -13,6 +13,8 @@ tags:
 
 **PowerShell Empire** es una plataforma de post-explotación y control de comando (C2) diseñada para facilitar la administración y operación de sistemas comprometidos. Utiliza PowerShell para ofrecer un conjunto completo de funcionalidades, desde ejecución remota de comandos hasta el despliegue de payloads.
 
+Considerar combinarlo con starkiller para tener una interfaz gráfica de los listeners y agents activos.
+
 ## Características clave
 
 - **C2 completo**: Proporciona un framework modular para controlar agentes en sistemas comprometidos.
