@@ -7,6 +7,7 @@ tags:
   - fingerprinting
   - seguridad_web
   - analisis
+  - herramienta
 ---
 
 ## Descripción
