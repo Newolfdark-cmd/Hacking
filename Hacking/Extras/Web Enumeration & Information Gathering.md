@@ -41,16 +41,36 @@ Herramientas como **Gobuster**, **WhatWeb**, **Dirb**, y **Sublist3r** facilitan
 
 #### Whois
 
-Nos permite conocer diferente información sobre un dominio (update date, domain name, domain status, registry expiry date...)
+Whois es un protocolo utilizado para consultar bases de datos que contienen información registrada sobre nombres de dominio, direcciones IP y otros recursos de red. La información que puedes obtener incluye: - Datos de contacto del registrador. - Fechas de creación y expiración. - Estado del dominio. - Servidores DNS asociados.
 
 Uso común: ``whois domain/ip
 
+Otros ejemplos:
+- ``whois example.com | grep "Registrar\|Expiry Date"
+- ``whois 8.8.8.8
 #### Host
 
 Nos permite conocer las IPs de un determinado dominio.
 
 Uso común: ``host domain
 
+Otros ejemplos:
+- ``host -t MX example.com # Registros de correo.
+- ``host -t NS example.com # Servidores de nombres.
 #### Whois domaintool.com
 
-Plataforma online que nos permite conocer información sobre un determinado domino, más visual que desde consola.
+DomainTools es una plataforma web que ofrece información avanzada sobre dominios, con una interfaz más visual que `whois`. Permite consultar:
+
+- Historial de dominios.
+- Cambios de propietario.
+- Servidores DNS anteriores.
+- Relaciones con otros dominios.
+
+#### Netcraft
+
+Netcraft es una herramienta en línea que proporciona análisis detallados de dominios y sitios web. Ofrece:
+
+- Información sobre tecnologías utilizadas.
+- Historial de hosting.
+- Posibles vulnerabilidades.
+- Análisis de phishin
