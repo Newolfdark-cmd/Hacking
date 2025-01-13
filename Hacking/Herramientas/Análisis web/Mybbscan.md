@@ -44,4 +44,5 @@ Es especialmente útil para pentesters y administradores que deseen evaluar la s
 mybbscan --url http://ejemplo.com
 ```
 
-![[Pasted image 20250113085125.png]]
+![[Pasted image 20250113085226.png]]
+
