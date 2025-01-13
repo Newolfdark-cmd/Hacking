@@ -7,6 +7,7 @@ tags:
   - post-explotacion
   - c2
   - powershell
+  - herramienta
 ---
 
 ## Descripción

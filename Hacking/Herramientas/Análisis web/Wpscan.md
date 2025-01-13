@@ -7,6 +7,7 @@ tags:
   - escaneo_web
   - wordpress
   - vulnerabilidades
+  - herramienta
 ---
 
 ## WPScan

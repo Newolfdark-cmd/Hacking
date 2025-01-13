@@ -7,6 +7,7 @@ tags:
   - phishing
   - ingenieria_social
   - plantillas
+  - herramienta
 ---
 
 ## Descripción

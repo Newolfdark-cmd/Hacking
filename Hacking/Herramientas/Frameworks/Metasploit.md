@@ -8,6 +8,7 @@ tags:
   - post-explotación
   - c2
   - pentesting
+  - herramienta
 ---
 
 ## Descripción

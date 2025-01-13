@@ -7,6 +7,7 @@ tags:
   - escaneo_web
   - vulnerabilidades
   - seguridad
+  - herramienta
 ---
 
 ## Nikto
