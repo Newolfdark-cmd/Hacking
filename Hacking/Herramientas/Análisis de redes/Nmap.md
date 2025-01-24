@@ -69,3 +69,17 @@ nmap --script=vuln www.example.com
 | `-oG`   | Exporta el resultado en formato Grepable.             |
 | `--open`| Muestra solo puertos abiertos.                        |
 | `--reason` | Muestra la razón por la que se concluye que un puerto está abierto, cerrado o filtrado. |
+
+6. **Comprobar scripts de un servicio**:
+
+```bash 
+ls -la /usr/share/nmap/scripts/ | grep -e "servicio"
+```
+
+
+7. **Escaneo de vulnerabilidades con scripts automáticos (NSE)**:
+
+```bash 
+nmap -sS -sV -sC -p- ip
+```
+
