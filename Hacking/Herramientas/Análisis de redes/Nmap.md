@@ -34,7 +34,7 @@ nmap -sn 192.168.1.0/24`
 nmap -sV www.example.com
 ```
 
-5. **Escaneo de vulnerabilidades con scripts prediseñados (NSE)**:
+5. **Escaneo de puertos con scripts prediseñados (NSE)**:
 
 ```bash 
 nmap --script=vuln www.example.com
@@ -77,9 +77,27 @@ ls -la /usr/share/nmap/scripts/ | grep -e "servicio"
 ```
 
 
-7. **Escaneo de vulnerabilidades con scripts automáticos (NSE)**:
+7. **Escaneo de puertos con scripts automáticos (NSE)**:
 
 ```bash 
 nmap -sS -sV -sC -p- ip
 ```
 
+7. **Escaneo de puertos con Firewall evasion:
+
+```bash 
+nmap -Pn -sS -sV -p445,3389 -f --data-length 200 -D 10.10.23.1,10.10.23.2 ip
+```
+
+1. **`-Pn`**: Desactiva la detección de hosts (ping) y asume que el objetivo está activo.
+2. **`-sS`**: Realiza un escaneo de puertos _SYN_ (half-open scan) para identificar puertos abiertos.
+3. **`-sV`**: Detecta las versiones de los servicios que están activos en los puertos identificados.
+4. **`-p445,3389`**: Especifica que solo se escanearán los puertos 445 (usado por SMB) y 3389 (usado por RDP).
+5. **`-f`**: Fragmenta los paquetes para intentar evadir sistemas de detección de intrusos (IDS/IPS).
+6. **`--data-length 200`**: Añade 200 bytes adicionales de datos aleatorios a los paquetes, dificultando más su análisis.
+7. **`-D 10.10.23.1,10.10.23.2`**: Usa estas direcciones IP como señuelos (_decoys_), simulando que las solicitudes provienen también de estas IPs para confundir a los sistemas de monitoreo.
+8. **`ip`**: Es la dirección IP o dominio del objetivo que se desea escanear.
+
+### Resumen
+
+Realiza un escaneo enfocado en los puertos 445 y 3389 para identificar servicios y versiones, aplicando técnicas para evadir detección (fragmentación, señuelos, y datos adicionales).
