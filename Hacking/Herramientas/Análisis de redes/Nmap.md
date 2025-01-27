@@ -101,3 +101,5 @@ nmap -Pn -sS -sV -p445,3389 -f --data-length 200 -D 10.10.23.1,10.10.23.2 ip
 ### Resumen
 
 Realiza un escaneo enfocado en los puertos 445 y 3389 para identificar servicios y versiones, aplicando técnicas para evadir detección (fragmentación, señuelos, y datos adicionales).
+
+Para minimizar el tiempo de scan recomienda el --host-timeout con un tiempo de 30s.
