@@ -1,6 +1,6 @@
 Descripción
 
-En el ejemplo se ha ejecutado así:
+En el ejemplo se ha ejecutado así (el script estaba en C:\Users\student\Desktop\Powersploit\Privesc):
 
 ```powershell
 . .\PowerUp.ps1
