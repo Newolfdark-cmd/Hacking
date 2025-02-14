@@ -1,4 +1,4 @@
-Descripción
+Script automatizado para poder detectar vectores de escalada de privilegios en máquinas windows.
 
 En el ejemplo se ha ejecutado así (el script estaba en C:\Users\student\Desktop\Powersploit\Privesc):
 
