@@ -1,4 +1,6 @@
-Descripción
+Juicy Potato es una técnica de escalada de privilegios en sistemas Windows que explota la asignación incorrecta de tokens de privilegio en servicios con permisos SYSTEM. Esta vulnerabilidad se basa en el abuso de COM (Component Object Model) para obtener un token de acceso con privilegios elevados.
+
+Se usa cuando se tiene acceso a un usuario con permisos de servicio (como `SERVICE_ACCOUNT`) pero no directamente a SYSTEM. Mediante Juicy Potato, es posible ejecutar comandos con los privilegios más altos del sistema.
 
 A partir de una sesión de meterpreter vamos a ejecutar los siguientes comandos:
 
