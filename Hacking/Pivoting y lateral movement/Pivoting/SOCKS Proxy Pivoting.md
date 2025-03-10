@@ -78,4 +78,3 @@ proxychains python 38730.py http://182.18.69.3/clipper/ admin password
 ```
 
 ![[Pasted image 20250307093920.png]]
-
