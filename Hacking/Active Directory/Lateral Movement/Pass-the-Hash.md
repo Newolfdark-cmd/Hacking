@@ -9,6 +9,7 @@ Ejemplo práctico:
 
 ```powershell
 cd C:\tools
+powershell -ep bypass
 . .\PowerView.ps1
 Get-Domain
 ```
