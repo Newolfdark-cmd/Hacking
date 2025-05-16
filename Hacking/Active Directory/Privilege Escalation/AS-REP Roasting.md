@@ -9,7 +9,7 @@ ejemplo de ataque:
 cd C:\tools
 powershell -ep bypass
 . .\PowerView.ps1
-Get-Domainuser | Where-Object { $_-UserAccountControl -like "*DONT_REQ_PREATH*" }
+Get-DomainUser | Where-Object { ($_.UserAccountControl -band 4194304) }
 ```
 
 ![[Pasted image 20250321102818.png]]
